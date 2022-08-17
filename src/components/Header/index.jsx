@@ -1,4 +1,4 @@
-import walke from "./assets/images/jordan-walke.png";
+import walke from "../../assets/images/jordan-walke.png";
 
 function Header() {
     return (
