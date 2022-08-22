@@ -1,7 +1,9 @@
 import './App.css';
 import SideBar from "./components/Sidebar";
 import Header from "./components/Header";
-import DashboardPage from "./pages/Dashboard";
+import Footer from "./components/Footer";
+import MovieListPage from "./pages/MovieListPage";
+// import DashboardPage from "./pages/Dashboard";
 
 function App() {
   return (
@@ -15,17 +17,11 @@ function App() {
 
           <Header />
 
-          <DashboardPage />
+          {/* <DashboardPage /> */}
+          <MovieListPage />
         </div>
 
-        <footer className="sticky-footer bg-white">
-          <div className="container my-auto">
-            <div className="copyright text-center my-auto">
-              <span>Copyright &copy; Dashboard 2021</span>
-            </div>
-          </div>
-        </footer>
-
+        <Footer />
       </div>
 
     </div>
