@@ -1,14 +1,4 @@
-import { useState, useEffect } from "react";
-
-function MoviesList(props) {
-    const [movies, setMovies] = useState([])
-
-    useEffect(() => {
-        fetch('http://localhost:3001/api/movies')
-            .then(response => response.json())
-            .then(data => setMovies(data))
-    }, []);
-
+function MoviesTable(props) {
     return (
         <table className="table table-bordered table-dark">
             <thead>
@@ -22,7 +12,7 @@ function MoviesList(props) {
             </thead>
             <tbody>
                 {
-                    movies.map((movie, index) => (
+                    props.movies.map((movie, index) => (
                         <tr key={index}>
                             <th scope="row">{movie.id}</th>
                             <td>{movie.title}</td>
@@ -38,4 +28,4 @@ function MoviesList(props) {
     );
 }
 
-export default MoviesList
+export default MoviesTable

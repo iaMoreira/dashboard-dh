@@ -2,7 +2,7 @@ import './App.css';
 import SideBar from "./components/Sidebar";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-// import MovieListPage from "./pages/MovieListPage";
+import MovieListPage from "./pages/MovieListPage";
 import DashboardPage from "./pages/Dashboard";
 
 function App() {
@@ -17,8 +17,8 @@ function App() {
 
           <Header />
 
-          <DashboardPage />
-          {/* <MovieListPage /> */}
+          {/* <DashboardPage /> */}
+          <MovieListPage />
         </div>
 
         <Footer />
